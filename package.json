@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./src/script.mjs",
-    "start": "node ./src/script.mjs"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start:dev": "nodemon --exec ts-node ./script.ts",
+  "start": "node ./src/script.mjs"
   },
   "repository": {
     "type": "git",

@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "start:dev": "nodemon --exec ts-node ./script.ts",
-  "start": "node ./src/script.mjs"
+    "devStart": "nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,19 +13,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/AndreiToma123/AI-Powered-Ticket-Analyzer-Toolset/issues"
   },
   "homepage": "https://github.com/AndreiToma123/AI-Powered-Ticket-Analyzer-Toolset#readme",
   "dependencies": {
     "@prisma/client": "^6.19.0",
-    "@prisma/extension-accelerate": "^2.0.2",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.0",
-    "nodemon": "^3.1.10",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
     "prisma": "^6.19.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

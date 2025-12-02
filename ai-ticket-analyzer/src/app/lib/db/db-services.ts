@@ -11,6 +11,8 @@ export interface Ticket {
     status: string;
     subject: string;
     content: string;
+    aiSummary?:string;
+    aiDraft?:string;
 }
 
 export interface Employee {

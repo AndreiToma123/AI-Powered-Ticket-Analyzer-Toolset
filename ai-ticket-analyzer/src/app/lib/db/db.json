@@ -1,0 +1,78 @@
+{
+  "tickets": [
+    {
+      "id": "t-101",
+      "name": "Marcus Aurelius",
+      "requestDate": "2023-10-27T09:15:00Z",
+      "email": "marcus.a@rome.inc",
+      "category": "Technical Support",
+      "urgency": "High",
+      "status": "New",
+      "subject": "System Crash on Login",
+      "content": "Hello support, I am unable to log into the main dashboard. Every time I enter my credentials, I get a 500 Internal Server Error. This is critical as my team cannot access our files. Please help immediately.",
+      "aiSummary": "User is experiencing a critical 500 Internal Server Error upon login, preventing team access to files.",
+      "aiDraft": "Dear Marcus,\n\nI apologize for the disruption. A 500 error usually indicates a server-side issue. I have escalated this to our engineering team immediately. Could you please confirm which browser you are using and if clearing your cache makes any difference while we investigate?\n\nBest regards,\nSupport Team"
+    },
+    {
+      "id": "t-102",
+      "name": "Sarah Connor",
+      "requestDate": "2023-10-26T14:30:00Z",
+      "email": "sarah.c@sky.net",
+      "category": "Billing",
+      "urgency": "Medium",
+      "status": "In Progress",
+      "subject": "Charged twice for subscription",
+      "content": "Hi there, I was checking my bank statement and noticed two charges for the monthly pro plan on Oct 25th. I only have one account. Can you please refund the duplicate charge?",
+      "aiSummary": "Customer reports a duplicate charge for the monthly Pro plan on Oct 25th and requests a refund.",
+      "aiDraft": "Hello Sarah,\n\nThank you for reaching out. I'm sorry for the confusion regarding the double charge. I can see the two transactions in our system. I have initiated a refund for the duplicate amount, which should appear on your statement within 3-5 business days.\n\nBest regards,\nBilling Support"
+    },
+    {
+      "id": "t-103",
+      "name": "Jean-Luc Picard",
+      "requestDate": "2023-10-28T08:45:00Z",
+      "email": "j.picard@enterprise.org",
+      "category": "Feature Request",
+      "urgency": "Low",
+      "status": "New",
+      "subject": "Dark Mode availability?",
+      "content": "Good morning. Our team really enjoys using the platform, but the white background is quite bright during night shifts. Do you have a Dark Mode feature planned for the roadmap?",
+      "aiSummary": "User is inquiring about the availability or roadmap status of a 'Dark Mode' feature to reduce eye strain.",
+      "aiDraft": "Hello Jean-Luc,\n\nWe appreciate the feedback! While we don't have Dark Mode available right now, it is actually one of our most requested features and is currently on our roadmap for Q1 next year. I will tag your ticket so you get notified when it releases.\n\nBest regards,\nProduct Team"
+    },
+    {
+      "id": "t-104",
+      "name": "Tony Stark",
+      "requestDate": "2023-10-25T16:20:00Z",
+      "email": "tony@stark.com",
+      "category": "Sales",
+      "urgency": "Medium",
+      "status": "Closed",
+      "subject": "Enterprise Licensing Question",
+      "content": "We are looking to scale up from 50 seats to 500 seats next month. Do you offer volume discounts for enterprise tiers? Also, we need SSO integration.",
+      "aiSummary": "Lead is inquiring about volume discounts for scaling to 500 seats and requires SSO integration.",
+      "aiDraft": "Hi Tony,\n\nThanks for considering us for your scaling needs. Yes, we absolutely offer volume pricing for 500+ seats, and our Enterprise tier includes SSO (Okta, Google, etc.) by default. I have looped in our Sales Director to provide you with a custom quote.\n\nBest regards,\nSales Team"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Alice Johnson",
+      "status": "Online"
+    },
+    {
+      "id": "emp-002",
+      "name": "Bob Smith",
+      "status": "Busy"
+    },
+    {
+      "id": "emp-003",
+      "name": "Charlie Davis",
+      "status": "On Break"
+    },
+    {
+      "id": "emp-004",
+      "name": "Diana Prince",
+      "status": "Offline"
+    }
+  ]
+}

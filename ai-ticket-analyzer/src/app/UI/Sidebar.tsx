@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Home, Ticket } from "lucide-react";
-
+import { Menu, Home, Ticket, LogOut } from "lucide-react";
+import { useAuth } from '@/context/AuthContext';
+ 
 const Sidebar = () => {
     const pathname = usePathname();
+    const { logout } = useAuth();
 
     const getLinkClass = (path: string) => {
         const isActive = pathname === path || (path !== '/' && pathname.startsWith(path));
@@ -25,6 +27,15 @@ const Sidebar = () => {
                     <Ticket size={24} />
                 </Link>
             </nav>
+            <div className="mt-auto">
+                <button 
+                    onClick={logout}
+                    className="text-white/60 p-2 rounded-md flex justify-center hover:text-white hover:bg-white/10"
+                    title="Logout"
+                >
+                    <LogOut size={24} />
+                </button>
+            </div>
         </aside>
     );
 };

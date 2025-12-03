@@ -1,4 +1,4 @@
-import { readDB } from '@/app/lib/db/db-services';
+import { readDB } from '@/lib/db/db-services';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import AISummary from '@/app/UI/AISummary';

@@ -1,4 +1,4 @@
-import { readDB } from '@/app/lib/db/db-services';
+import { readDB } from '@/lib/db/db-services';
 import Dashboard from './UI/Dashboard';
 import TicketList from './UI/TicketList';
 import AgentList from './UI/AgentList';

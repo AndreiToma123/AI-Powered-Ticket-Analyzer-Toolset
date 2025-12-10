@@ -19,7 +19,7 @@ return (
         <table className="w-full text-left border-collapse">
             <thead>
                 <tr className="text-[#2d3436] border-b border-[#dfe6e9]">
-                    <th className="p-4">Name</th>
+                    <th className="p-4">ID</th>
                     <th className="p-4">Request Date</th>
                     <th className="p-4">Email</th>
                     <th className="p-4">Category</th>
@@ -32,8 +32,8 @@ return (
                     <tr
                     key={ticket.id}
                     onClick={() => router.push(`/tickets/${ticket.id}`)}
-                    className="cursor-pointer hover:bg-grey-50 transition-colors border-b border-[#def6e9]">
-                        <td className="p-4 font-medium">{ticket.name}</td>
+                    className="cursor-pointer hover:bg-gray-50 transition-colors border-b border-[#def6e9]">
+                        <td className="p-4 font-medium">{ticket.id}</td>
                         <td className="p-4 font-medium">{formatDate(ticket.requestDate)}</td>
                         <td className="p-4 font-medium">{ticket.email}</td>
                         <td className="p-4 font-medium">{ticket.category}</td>

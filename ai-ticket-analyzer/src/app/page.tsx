@@ -1,11 +1,11 @@
-import { readDB } from '@/lib/db/db-services';
+import { readDb } from '@/lib/db/db-services';
 import Dashboard from './UI/Dashboard';
 import TicketList from './UI/TicketList';
 import AgentList from './UI/AgentList';
 
 
 export default async function DashboardPage(){
-  const db = await readDB();
+  const db = await readDb();
 
   return (
 

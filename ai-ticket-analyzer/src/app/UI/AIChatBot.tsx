@@ -14,7 +14,7 @@ const ChatBot = () => {
         setMessages([...messages, { id: Date.now(), text: input, sender: 'user'}]);
         setInput('');
         setTimeout(() => {
-            setMessages(prev => [...prev, { id: Date.now() + 1 , text: "I am demo bot.", sender:'bot'}]);
+            setMessages(prev => [...prev, { id: Date.now() + 1 , text: "Error connecting to AI backend.", sender:'bot'}]);
         }, 1000);
     };
 

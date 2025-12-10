@@ -1,13 +1,12 @@
-@import "tailwindcss";
+@import "tailwindcss"; /*DOES NOT SEEM TO WORK SO HARDCODED STYLING*/
 
 @layer base {
   :root {
-    /* Added missing semicolons below */
     --color-primary: #2d3436;
     --color-secondary: #636e72;
     --color-accent: #0984e3;
     --color-background: #f5f6fa;
-    --color-surface: #ffffff;
+    --color-surface: #2d3436;
     --color-border: #dfe6e9;
   }
 }

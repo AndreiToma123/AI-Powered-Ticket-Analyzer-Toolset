@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { Lock, Mail } from 'lucide-react';
 
 export default function LoginPage() {
@@ -32,8 +32,8 @@ export default function LoginPage() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-[#f8f9fa]">
             <div className="bg-white p-8 rounded-2xl border border-[#e2e8f0] w-full max-w-md">
-                <div className="text-center-mb-8">
-                    <h1 className="text-2xl fonr-bold text-[#2s3436] mb-2">Welcome</h1>
+                <div className="text-center mb-8">
+                    <h1 className="text-2xl font-bold text-[#2d3436] mb-2">Welcome</h1>
                     <p className="text-[#636e72]">Sign in to access the dashboard</p>         
                     </div>
                     {
@@ -53,7 +53,7 @@ export default function LoginPage() {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#dfe6e9] focus:outline-none focus:ring-[#6c5ce7]/20 focus:border-[#6c5ce7]"
+                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#dfe6e9] focus:outline-none focus:ring-[#0984e3]/20 focus:border-[#0984e3]"
                                     placeholder="name@company.fi"
                                     required
                                     />
@@ -68,7 +68,7 @@ export default function LoginPage() {
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#dfe6e9] focus:outline-none focus:ring-[#6c5ce7]/20 focus:border-[#6c5ce7]"
+                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#dfe6e9] focus:outline-none focus:ring-[#0984e3]/20 focus:border-[#0984e3]"
                                     placeholder="******"
                                     required
                                     />
@@ -78,7 +78,7 @@ export default function LoginPage() {
                         <button 
                             type="submit"
                             disabled={loading}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#dfe6e9] focus:outline-none focus:ring-[#6c5ce7]/20 focus:border-[#6c5ce7]"
+                            className="w-full pr-4 py-3 rounded-xl bg-[#0984e3] border border-[#dfe6e9] focus:outline-none focus:ring-[#0984e3]/20 focus:border-[#0984e3]"
                         >
                             {loading ? 'Sign in...' : 'Sign In'}
                         </button>

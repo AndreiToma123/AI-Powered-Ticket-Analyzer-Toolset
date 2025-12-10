@@ -6,7 +6,7 @@ interface Employee {
 
 const AgentList = ({ employees } : { employees: Employee[] }) => {
     const onlineAgent = employees.filter(t => t.status === 'Online');
-    const onBreakAgent = employees.filter(t => t.status === 'On Break');
+    const onBreakAgent = employees.filter(t => t.status === 'On-Break');
     const awayAgent = employees.filter(t => t.status === 'Away');
 
     return (
